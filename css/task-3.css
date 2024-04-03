@@ -1,40 +1,38 @@
 .back-link {
-margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 .container {
-border-radius: 8px;
-padding: 24px;
-width: 408px;
-height: 136px;
-background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 136px;
+  background: #fff;
 }
 
 .input {
-width: 360px;
-height: 40px;
-border: 1px solid #808080;
-border-radius: 4px;
-font-family: "Montserrat", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: #2e2f42;
-padding: 8px 16px;
-margin-bottom: 16px;
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 360px;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input:hover {
-border-color: #000;
+  border-color: #000;
+}
+.input:active {
+  border-color: #808080;
 }
 .title {
-font-family: "Montserrat", sans-serif;
-font-weight: 600;
-font-size: 24px;
-line-height: 1.33333;
-letter-spacing: 0.04em;
-color: #2e2f42;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
 }
 .span {
 }
