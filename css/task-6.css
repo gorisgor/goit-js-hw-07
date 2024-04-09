@@ -60,6 +60,9 @@
 }
 
 .boxes {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
   border-radius: 8px;
   padding: 32px;
   width: 486px;

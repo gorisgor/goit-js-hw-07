@@ -12,25 +12,30 @@ function getRandomHexColor() {
 // Кожен наступний елемент повинен бути ширшим і вищим від попереднього на 10px.
 // Усі елементи повинні мати випадковий колір фону. Використовуй готову функцію getRandomHexColor() для отримання випадкового кольору.
 // Для очищення колекції після натискання на кнопку Destroy створи функцію destroyBoxes(), яка очищає вміст div#boxes, у такий спосіб видаляючи всі створені елементи.
-
+const boxesEl = document.querySelector(".boxes")
 const createBtnEl = document.querySelector(".create-btn");
-
 const destroyBtnEl = document.querySelector(".destroy-btn");
-
 const inputEl = document.querySelector(".input");
-let amount;
-
-inputEl.addEventListener("input", event => amount = event.currentTarget.valueAsNumber)
 
 
-
+inputEl.addEventListener("input", event => {const amount = event.currentTarget.value;
+createBoxes(amount)});
 
 createBtnEl.addEventListener("click", createBoxes)
 destroyBtnEl.addEventListener("click",destroyBoxes)
 
-function createBoxes (amount) {console.log(amount);
+function createBoxes (amount) { if (amount >= 1 && amount <= 100){
 
+}
 }
 function destroyBoxes (amount) {
-
+  const noDiv = div.remove()
 }
+
+
+const div = document.createElement("div");
+const color = getRandomHexColor();
+div.style.width = "30px";
+div.style.height = "30px";
+div.style.backgroundColor = color;
+boxesEl.append(div)
