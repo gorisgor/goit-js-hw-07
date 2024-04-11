@@ -34,6 +34,7 @@ const images = [
 
 const gallery = document.querySelector(".gallery");
 
+
 images.forEach((image) => {
   const li = document.createElement("li");
   const img = document.createElement("img");

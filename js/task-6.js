@@ -18,7 +18,7 @@ const destroyBtnEl = document.querySelector(".destroy-btn");
 const inputEl = document.querySelector("input");
 destroyBtnEl.addEventListener("click",destroyBoxes)
 let amount;
-createBtnEl.addEventListener('click', () => {
+createBtnEl.addEventListener("click", () => {
     amount = inputEl.value;
     createBoxes (amount)
     inputEl.value = ''
