@@ -34,12 +34,15 @@ const images = [
 
 const gallery = document.querySelector(".gallery");
 
-
-images.forEach((image) => {
+function createGalleryEl(image) {
   const li = document.createElement("li");
   const img = document.createElement("img");
   img.src = image.url;
   img.alt = image.alt;
-  gallery.append(li);
   li.append(img);
-});
+  return li;
+}
+
+const galleryElems = images.map(createGalleryEl);
+
+gallery.append(...galleryElems);
